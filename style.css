@@ -25,78 +25,59 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-ol, ul {
-  list-style: none;
-}
+::selection { color: white; background: black; }
+::-moz-selection { color: white; background: black; }
 
 body {
-  font-family: "helvetica neue", helvetica, arial, sans-serif;
-  height: 100%;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 32px;
+  color: #333;
+  background: white;
+  padding: 80px 40px;
 }
 
-.container {
-  padding: 15% 0;
-}
-
-.main {
-  margin: 0 auto;
-  padding: 0 2px;
-  position: relative;
-  width: 775px;
-}
-
-.source {
-  clear: both;
-  font: normal 10px/16px 'pt mono';
-  opacity: 0.3;
-  padding: 20px 0 0 0;
-  text-transform: uppercase; }
-
-
-h2 {
-  color: #1472DA;
-  font: bold 164px/1 'oswald';
-  position: absolute;
-  text-transform: uppercase;
-  width: 100%;
-}
-
-h2:nth-child(2) {
-  top: 160px;
-  text-align: right;
-}
-
-.kern {
-  margin: 0 0 0 7px;
+section {
+  max-width: 680px;
 }
 
 ol {
-  position: relative;
-  top: 190px;
-  right: 430px;
-  float: right;
-
+  list-style: none;
+  padding-top: 20px;
 }
 
-ol li {
-  color: #999;
-  font: normal 13px/54px 'pt mono';
-  letter-spacing: 7px;
-  padding: 0 15px;
-  line-height: 40px;
-  text-transform: uppercase;
-}
-
-ol li:hover {
-  background-color: #eee;
-}
-
-ol li::before {
-    content: "> ";
-    color: #222;
+p {
+  padding-bottom: 18px;
 }
 
 a {
-    color: inherit;
-    text-decoration : none;
+  color: currentcolor;
+  box-shadow: inset 0 -0.33em rgb(196, 222, 242);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+a:hover {
+  background: rgb(196, 222, 242);
+  box-shadow: none;
+}
+
+.headshot {
+  height: 150px;
+  width: 150px;
+  border-radius: 150px;
+  margin-bottom: 18px;
+}
+
+.logo {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  vertical-align: middle;
+}
+
+.mit {
+  height: 36px;
+  width: 36px;
 }
